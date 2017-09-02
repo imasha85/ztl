@@ -3,7 +3,7 @@ ymaps.ready(init);
 function init () {
     var myMap = new ymaps.Map('map', {
             center: [41.893917, 12.507459],
-            zoom: 4
+            zoom: 6
         }, {
             searchControlProvider: 'yandex#search'
         }),
@@ -11,7 +11,7 @@ function init () {
             // Чтобы метки начали кластеризоваться, выставляем опцию.
             clusterize: true,
             // ObjectManager принимает те же опции, что и кластеризатор.
-            gridSize: 120,
+            gridSize: 150,
             clusterDisableClickZoom: true
         });
 
